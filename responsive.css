@@ -1,0 +1,181 @@
+@media (max-width:1000px) {
+  .header-menu li {
+    padding: 0 7px;
+  }
+  .header-menu a {
+    font-size: 20px;
+    padding: 0;
+  }
+  .header-menu span {
+    font-size: 10px;
+  }
+  .insta_btn2 {
+    width: 110px;
+  }
+  .top-wrapper {
+    padding: 70px 0 70px 0;
+    background-image: url(picture/dog24.jpg);
+  }
+  .top-wrapper h1 {
+    font-size: 30px;
+  }
+  .heading br {
+    display: block;
+  }
+  .top-wrapper p {
+    font-size: 12px;
+  }
+  .menu {
+    width:100%;
+  }
+  .attention-msg {
+    width: 65%;
+  }
+}
+
+@media (max-width:700px) {
+  .heading {
+    width: 90%;
+    margin: auto;
+  }
+  .container-p br {
+    display: block;
+  }
+  /*　ハンバーガーボタン　*/
+  .hamburger {
+    display : block;
+    position: fixed;
+    z-index : 3;
+    left : 13px;
+    top   : 12px;
+    width : 42px;
+    height: 42px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .hamburger span {
+    display : block;
+    position: absolute;
+    width   : 30px;
+    height  : 2px ;
+    left    : 6px;
+    border-radius:2px;
+    background : #5D99FF;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition   : 0.3s ease-in-out;
+    transition        : 0.3s ease-in-out;
+  }
+  .hamburger span:nth-child(1) {
+    top: 10px;
+  }
+  .hamburger span:nth-child(2) {
+    top: 20px;
+  }
+  .hamburger span:nth-child(3) {
+    top: 30px;
+  }
+
+  /* ナビ開いてる時のボタン */
+  .hamburger.active span:nth-child(1),
+  .hamburger.active span:nth-child(3) {
+    width : 12px;
+  }
+  .hamburger.active span:nth-child(1){
+
+    -webkit-transform:    translate(1px,3px) rotate(315deg);
+    -moz-transform   : translate(1px,3px) rotate(315deg);
+    transform        : translate(2px,3px) rotate(315deg);
+  }
+  .hamburger.active span:nth-child(3){
+
+    -webkit-transform: translate(11px,-17px) rotate(-45deg);
+    -moz-transform   : translate(11px,-17px) rotate(45deg);
+    transform        : translate(10px,-17px) rotate(45deg);
+  }
+  .hamburger.active span:nth-child(2) {
+    width : 24px;
+      transform: translate(0px,0px)rotate(270deg);
+  }
+  nav.globalMenuSp {
+    display : block;
+    position: fixed;
+    z-index : 2;
+    top  : 0;
+    left : 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-100%);
+    transition: all 0.6s;
+    width: 100%;
+  }
+
+  nav.globalMenuSp ul {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  nav.globalMenuSp ul li {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+  }
+  nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  nav.globalMenuSp ul li:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  nav.globalMenuSp ul li a {
+    display: block;
+    color: #5D99FF;
+    padding: 0.8em 0;
+    font-size: 24px;
+    text-decoration :none;
+  }
+
+  /* このクラスを、jQueryで付与・削除する */
+  nav.globalMenuSp.active {
+    transform: translateY(0%);
+  }
+
+  .header-left {
+    margin-left: 43%
+  }
+  .top-wrapper {
+    background-image: url(picture/dog24.jpg);
+  }
+  .menu {
+    width:100%;
+  }
+  .header-menu {
+   display:none;
+ }
+ .header-follow {
+   padding-right: 10px;
+ }
+ #faq-list {
+   width: 80%;
+ }
+ .attention-msg {
+   width: 80%;
+ }
+ .attention-msg img {
+   width: 100%;
+ }
+  .operated-wrapper {
+    width: 100%;
+  }
+  .contact-wrapper  {
+    width: 100%;
+  }
+  a[href^="tel:"]{
+    pointer-events: auto;
+  }
+  .register-part {
+    text-align: center;
+  }
+}
